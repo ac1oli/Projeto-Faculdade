@@ -1,93 +1,67 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="cadastro2.css">
-        <title>Cadastra-se</title>
-    </head>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="cadastro2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+</head>
+<body> 
 
-<body>
+<div class="container">
 
-    <center><h3>Cadastra-se</h3><br><br><br></center>
-        
-<form>
+    <img src="img/image.png" alt="Logo">
 
-<fieldset>
+    <h3>Cadastre-se</h3>
 
-<legend>Cadastra-se</legend>      
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>Informações para cadastro</legend>
 
-    <div>
-    <label for="Nome">Nome Completo:</label>
-    <input type="text" name="Nome Completo" placeholder="Digite seu nome" id="Nome">
-    </div>
-                
-    <div>
-    <label for="E-mail">E-Mail:</label>
-    <input type="text" name="E-mail" placeholder="Digite seu E-mail" id="E-Mail">
-    </div>
+            <div>
+                <label for="nome">Nome Completo:</label>
+                <input type="text" name="nome_completo" placeholder="Digite seu nome" id="nome" class="nome" required>
+            </div>
 
-    <div>
-    <label for="telefone">Telefone:</label>
-    <input type="tel" id="telefone" name="telefone" placeholder="(99)99999-9999" id="telefone">
-    </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" placeholder="Digite seu e-mail" id="email" class="email" required>
+            </div>
 
-    <div>
-    <label for="Idade">Idade:</label>
-    <input type="number" name="Idade" id="Idade">
-    </div>
+            <div>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" class="telefone" required>
+            </div>
 
-    <div>
-    <label for="Data de nascimento">Data De Nascimento:</label>
-    <input type="date" name="Data de nascimento" id="date">
-    </div>
+            <div>
+                <label for="idade">Idade:</label>
+                <input type="number" name="idade" id="idade" class="idade" placeholder="Ex: 20" required>
+            </div>
 
-    <div>
-    <label for="senha">Senha:</label>
-    <input type="password" name="Senha" placeholder="xxxxxxxxxx" id="senha"><br>
-    </div>
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" placeholder="Digite sua senha" id="senha" class="senha" required>
+            </div>
 
-    <div>
-    <label for="senha">Confirme sua senha:</label>
-    <input type="password" name="Senha" placeholder="xxxxxxxxxx" id="confirme"><br>
-    </div>
+            <div>
+                <label for="confirme">Confirme sua senha:</label>
+                <input type="password" name="confirme_senha" placeholder="Confirme sua senha" id="confirme" class="senha" required>
+            </div>
 
-</fieldset>
-
-<fieldset>
-
-<legend>Um pouco sobre você</legend>
+        </fieldset>
 
         <div>
-        <label for="sexo">Sexo:</label>
-        <input type="radio" name="Sexo" value="M" id="sexo"> Masculino
-        </div>
-        <div>
-
-        <label>
-        <input type="radio" name="Sexo" value="F" id="sexo"> Feminino
-        </label>
+            <input type="submit" value="Enviar" class="submit"></input>
         </div>
 
-        <div>
-        <label for="objetivo">Qual é o seu principal objetivo?</label>
-        <input type="radio" name="objetivo" id="Emagrecimento"> Emagrecimento
-        
-        <input type="radio" name="objetivo" id="Ganho de Massa Muscular"> Ganho de Massa Muscular
-        <input type="radio" name="objetivo" id="Saude/Bem-Estar"> Saude/Bem-Estar
-        <input type="radio" name="objetivo" id="Performance"> Performance
-        </div>
-
-        <div>
-        <label for="atividade">Você pratica atividade fisica?</label>
-        <input type="radio" name="atividade" id="atividade"> Sim
-        <input type="radio" name="atividade" id="atividade"> Não
-        </div>
-
-</fieldset>
+    </form>
 
 
-</form>
+    <div class="login-link">
+        <a href="#">Já tenho cadastro</a>
+    </div>
+
+</div>
 
 </body>
-
 </html>
