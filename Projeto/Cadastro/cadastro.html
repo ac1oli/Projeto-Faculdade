@@ -1,55 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Cadastra-se</title>
-</head>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="cadastro2.css">
+        <title>Cadastra-se</title>
+    </head>
 
 <body>
 
-    <h3>Cadastra-se</h3><br>
-    
-    <form>
+    <center><h3>Cadastra-se</h3><br><br><br></center>
+        
+<form>
 
-        Nome Completo:<br>
-        <input type="text" name="Nome Completo" placeholder="Digete seu nome"><br>
+<fieldset>
 
-        E-mail:<br>
-        <input type="text" name="E-mail" placeholder="Digite seu E-mail"><br>
+<legend>Cadastra-se</legend>      
 
-        Telefone:<br>
-        <input type="tel" id="telefone" name="telefone" placeholder="(99)99999-9999"><br>
+    <div>
+    <label for="Nome">Nome Completo:</label>
+    <input type="text" name="Nome Completo" placeholder="Digite seu nome" id="Nome">
+    </div>
+                
+    <div>
+    <label for="E-mail">E-Mail:</label>
+    <input type="text" name="E-mail" placeholder="Digite seu E-mail" id="E-Mail">
+    </div>
 
-        Idade:<br>
-        <input type="number" name="Idade"><br>
+    <div>
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone" placeholder="(99)99999-9999" id="telefone">
+    </div>
 
-        Data de nascimento:<br>
-        <input type="date" name="Data de nascimento"><br> 
+    <div>
+    <label for="Idade">Idade:</label>
+    <input type="number" name="Idade" id="Idade">
+    </div>
 
-        Senha:<br>
-        <input type="password" name="Senha" placeholder="xxxxxxxxxx"><br>
-        Confirme sua Senha:<br>
-        <input type="password" name="Senha" placeholder="xxxxxxxxxx"><br><br>
+    <div>
+    <label for="Data de nascimento">Data De Nascimento:</label>
+    <input type="date" name="Data de nascimento" id="date">
+    </div>
+
+    <div>
+    <label for="senha">Senha:</label>
+    <input type="password" name="Senha" placeholder="xxxxxxxxxx" id="senha"><br>
+    </div>
+
+    <div>
+    <label for="senha">Confirme sua senha:</label>
+    <input type="password" name="Senha" placeholder="xxxxxxxxxx" id="confirme"><br>
+    </div>
+
+</fieldset>
+
+<fieldset>
+
+<legend>Um pouco sobre você</legend>
+
+        <div>
+        <label for="sexo">Sexo:</label>
+        <input type="radio" name="Sexo" value="M" id="sexo"> Masculino
+        </div>
+        <div>
+
+        <label>
+        <input type="radio" name="Sexo" value="F" id="sexo"> Feminino
+        </label>
+        </div>
+
+        <div>
+        <label for="objetivo">Qual é o seu principal objetivo?</label>
+        <input type="radio" name="objetivo" id="Emagrecimento"> Emagrecimento
+        
+        <input type="radio" name="objetivo" id="Ganho de Massa Muscular"> Ganho de Massa Muscular
+        <input type="radio" name="objetivo" id="Saude/Bem-Estar"> Saude/Bem-Estar
+        <input type="radio" name="objetivo" id="Performance"> Performance
+        </div>
+
+        <div>
+        <label for="atividade">Você pratica atividade fisica?</label>
+        <input type="radio" name="atividade" id="atividade"> Sim
+        <input type="radio" name="atividade" id="atividade"> Não
+        </div>
+
+</fieldset>
 
 
-        Sexo:<br><br>
-        <input type="radio" name="Sexo" value="M"> Masculino<br>
-        <input type="radio" name="Sexo" value="F"> Feminino<br><br>
-
-        Qual é o seu principal objetivo?<br><br>
-        <input type="radio" name="objetivo"> Emagrecimento<br>
-        <input type="radio" name="objetivo"> Ganho de Massa Muscular<br>
-        <input type="radio" name="objetivo"> Saude/Bem-Estar<br>
-        <input type="radio" name="objetivo"> Performance<br><br>
-
-        Você pratica atividade fisica?<br><br>
-        <input type="radio" name="atividade"> Sim<br>
-        <input type="radio" name="atividade"> Não<br><br>
-
-        <input type="submit" value="Cadastrar">
-
-    </form>
+</form>
 
 </body>
 
