@@ -22,3 +22,11 @@ label{
 input[type="text"]{
     width: 180px;
 }
+
+input[type="tel"]{
+    width: 180px;
+}
+
+input[type="number"]{
+    width: 180px;
+}
