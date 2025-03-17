@@ -1,19 +1,24 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background: url("../Projeto/img/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     margin: 0;
 }
 
 .container {
-    background: #3d86024d;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 350px;
+    background: transparent;
+    border: 1px solid #9b9b9b;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 30px 40px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -21,24 +26,19 @@ body {
 }
 
 .container img {
-    width: 170px;
-    margin-bottom: 15px;
+    width: 190px;
+    margin-bottom: 10px;
 }
 
 input {
     width: 100%;
     padding: 8px 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 20px;
     box-sizing: border-box;
     background-repeat: no-repeat;
     background-position: 10px center;
     background-size: 18px;
-}
-
-input:focus {
-    border-color: #3d8602;
-    outline: none;
 }
 
 form {
@@ -57,10 +57,13 @@ fieldset {
 }
 
 legend {
+    border: 20px;
     font-weight: bold;
+    color: #8EA638;
 }
 
 div {
+    color: #8EA638;
     margin-bottom: 10px;
     width: 100%;
     display: flex;
@@ -75,17 +78,18 @@ label {
 
 
 .login-link {
-    margin-top: 15px;
-    text-align: center;
+    margin-top: 10px;
+    display: flex;
 }
 
 .login-link a {
     font-size: 12px;
     font-family: Arial, sans-serif;
-    color: #000000;
+    color: #8EA638;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
+    margin: auto;
 }
 
 .login-link a:hover {
@@ -95,7 +99,7 @@ label {
 
 input.submit {
     color: #ffffff;
-    background: #3d86024d;
+    background: #8EA638;
     font-size: 15px;
     width: 100px;
     margin: 0 auto;
@@ -108,4 +112,34 @@ input.submit {
 
 input.submit:hover {
     background: #0a160d9a;
+}
+
+input.email {
+    background-image: url("../Projeto/img/email.png");
+    padding-left: 35px;
+    
+}
+
+input.senha {
+    background-image: url("../Projeto/img/cadeado.png");
+    padding-left: 35px;
+    color: #ff0000;
+}
+
+input.idade {
+    background-image: url("../Projeto/img/grupo-de-idade.png");
+    padding-left: 35px;
+    
+}
+
+input.nome {
+    background-image: url("../Projeto/img/do-utilizador.png");
+    padding-left: 35px;
+    
+}
+
+input.telefone {
+    background-image: url('../Projeto/img/chamada-telefonica.png');
+    padding-left: 35px;
+    
 }
