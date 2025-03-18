@@ -44,7 +44,9 @@ header{
     position: relative;
     top: 20px;
 }
+/* Fim da Navegação */
 
+/* Inicio do Cadastro/Login */
 
 #entrar ul{
     display: flex;
@@ -58,17 +60,27 @@ header{
     right: 20px;
 }
 #entrar a{
-    background: #7fa653;
+    background: #45281488;
+    border: 1px solid #452814;
     padding: 5px;
     border-radius: 20px;
     text-decoration: none;
     color: black;
 }
 #entrar a:hover{
-    color: white;
+    color: #2c2c2c;
     background: none;
-    border: 1px solid white;
+    border: 1px solid #252525;
+}
+/* Inicio do Cadastro/Login */
+
+
+/* Inicio do Conteudo */
+
+#container{
+    width: ;
 }
 
-/* Fim da Navegação */
-
+.forma1{
+    w
+}
