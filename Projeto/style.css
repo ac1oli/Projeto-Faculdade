@@ -78,9 +78,14 @@ header{
 /* Inicio do Conteudo */
 
 #container{
-    width: ;
+    width: 100%;
 }
 
 .forma1{
-    w
+    background: white;
+    height: 500px;
+}
+.forma2{
+    background: #8ba838;
+    height: 500px;
 }
