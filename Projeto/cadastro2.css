@@ -1,11 +1,10 @@
 body {
     font-family: Arial, sans-serif;
-    background: url("../Projeto/img/1.jpg");
+    background: url("../Projeto/cadastro-login/1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,11 +102,6 @@ input.submit {
     font-size: 15px;
     width: 100px;
     margin: 0 auto;
-    border-top-left-radius:30px;
-    border-top-right-radius:30px;
-    border-bottom-left-radius:30px;
-    border-bottom-right-radius:30px;
-    border-width:1px;
 }
 
 input.submit:hover {
@@ -115,31 +109,43 @@ input.submit:hover {
 }
 
 input.email {
-    background-image: url("../Projeto/img/email.png");
+    background-image: url("../Projeto/cadastro-login/email.png");
     padding-left: 35px;
     
 }
 
 input.senha {
-    background-image: url("../Projeto/img/cadeado.png");
+    background-image: url("../Projeto/cadastro-login/cadeado.png");
     padding-left: 35px;
     color: #ff0000;
 }
 
 input.idade {
-    background-image: url("../Projeto/img/grupo-de-idade.png");
+    background-image: url("../Projeto/cadastro-login/grupo-de-idade.png");
     padding-left: 35px;
     
 }
 
 input.nome {
-    background-image: url("../Projeto/img/do-utilizador.png");
+    background-image: url("../Projeto/cadastro-login/do-utilizador.png");
     padding-left: 35px;
     
 }
 
 input.telefone {
-    background-image: url('../Projeto/img/chamada-telefonica.png');
+    background-image: url('../Projeto/cadastro-login/chamada-telefonica.png');
     padding-left: 35px;
     
+}
+
+#voltar{
+    width: 60px;
+    margin: 0;
+    position: absolute;
+    left: 20px;
+}
+#voltar a img{
+    display: block;
+    width: 50px;
+    margin: 0;
 }
