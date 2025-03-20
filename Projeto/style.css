@@ -3,89 +3,83 @@
     margin: 0;
     padding: 0;
 }
+body{
+    
+}
 
-/* Formatação Geral do Cabeçalho */
-header{
-    background: #e5d2b8;
-    border-bottom:1px solid #9b9b9b;
-    width: 100%;
-    font-weight: bold;
+ul{
+    list-style: none;
 }
 
 /* Formatando o menu de navegação */
-#menu ul{
+#cabecalho{
     text-align: center;
+    background: rgba(0, 128, 0, 0.247);
+    display: flex;
+    justify-content: center;
+    gap: 350px;
+    height: 120px;
+    border-bottom: 1px solid #9e9d9d;
 }
-
-#menu li{
-    margin: 0 20px;
-    display: inline-flex;
-    justify-content: space-around;
+#img-cabecalho{
+    font-size: 20px;
+    position: relative;
+    top: 5px;
 }
-
-#menu a{
-    background: #45281488;
-    transition: color 0.3s ease;
-    border: 1px solid #452814;
-    border-radius: 10px;
-    padding: 5px 20px;
+#menu-cabecalho ul{
+    padding: 10px;
+    position: relative;
+    top: 40px;
+}
+#menu-cabecalho li{
+    padding: 0 25px;
+    display: inline;
+}
+#menu-cabecalho a{
+    /* border: 1px solid red; */
+    position: relative;
     text-decoration: none;
+    font-size: 18px;
     color: black;
+}
+#menu-cabecalho a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+
+#menu-cabecalho a:hover::after {
+    width: 100%;
+}
+#menu-cabecalho a.login::after,
+#menu-cabecalho a.cadastro::after {
+    display: none;
+}
+#menu-cabecalho a.cadastro{
+    background: #e5d2b8;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+#menu-cabecalho a.login{
+    
+    background: #452814;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
     position: relative;
-    top: -20px;
+    right: 25px;
 }
-#menu a:hover{
-    color: #2c2c2c;
-    background: none;
-    border: 1px solid #252525;
-}
-#menu img{
-    width: 100px;
-    position: relative;
-    top: 20px;
-}
+
 /* Fim da Navegação */
 
 /* Inicio do Cadastro/Login */
 
-#entrar ul{
-    display: flex;
-    justify-content: end;
-    list-style: none;
-}
-#entrar li{
-    margin: 0 10px;
-    position: relative;
-    top: -110px;
-    right: 20px;
-}
-#entrar a{
-    background: #45281488;
-    border: 1px solid #452814;
-    padding: 5px;
-    border-radius: 20px;
-    text-decoration: none;
-    color: black;
-}
-#entrar a:hover{
-    color: #2c2c2c;
-    background: none;
-    border: 1px solid #252525;
-}
-/* Inicio do Cadastro/Login */
+/* Final do Cadastro/Login */
 
 
 /* Inicio do Conteudo */
-
-#container{
-    width: 100%;
-}
-
-.forma1{
-    background: white;
-    height: 500px;
-}
-.forma2{
-    background: #8ba838;
-    height: 500px;
-}
