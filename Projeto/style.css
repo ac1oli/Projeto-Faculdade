@@ -4,7 +4,8 @@
     padding: 0;
 }
 body{
-    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 120px;
 }
 
 ul{
@@ -13,8 +14,13 @@ ul{
 
 /* Formatando o menu de navegação */
 #cabecalho{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
     text-align: center;
-    background: rgba(0, 128, 0, 0.247);
+    background: #c0e0c0;
     display: flex;
     justify-content: center;
     gap: 350px;
@@ -56,30 +62,78 @@ ul{
 #menu-cabecalho a:hover::after {
     width: 100%;
 }
-#menu-cabecalho a.login::after,
-#menu-cabecalho a.cadastro::after {
-    display: none;
-}
-#menu-cabecalho a.cadastro{
-    background: #e5d2b8;
-    padding: 5px 20px;
-    border-radius: 20px;
-}
-#menu-cabecalho a.login{
-    
-    background: #452814;
-    color: white;
-    padding: 5px 20px;
-    border-radius: 20px;
-    position: relative;
-    right: 25px;
-}
 
 /* Fim da Navegação */
 
 /* Inicio do Cadastro/Login */
 
+/* #menu-cabecalho a.login::after,
+#menu-cabecalho a.cadastro::after {
+    display: none;
+} */
+ 
+#menu-cabecalho a.cadastro{
+    /* background: #e5d2b8; */
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+#menu-cabecalho a.login{  
+    /* background: #452814; */
+    /* color: white; */
+    padding: 5px 20px;
+    border-radius: 20px;
+    position: relative;
+    right: 25px;
+}
 /* Final do Cadastro/Login */
 
 
 /* Inicio do Conteudo */
+
+.conteudo-bloco-1{
+    display: flex;
+    justify-content: center;
+    background: white;
+    height: 400px;
+    margin-bottom: 10px;
+}
+.conteudo-bloco-2{
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 128, 0, 0.247);
+    height: 400px;
+}
+
+.conteudo-p-imgLeft{
+    position: relative;
+    top: 25px;
+    right: 300px;
+}
+.conteudo-p-imgRight{
+    position: relative;
+    top: 15px;
+    right: -300px;
+}
+.espaco{
+    width: 1200px;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+.text-1{
+    position: relative;
+    width: 400px;
+    left: 750px;
+    top: -220px;
+    font-size: 20px;
+    /* border: 1px solid red; */
+    z-index: 1;
+}
+.text-2{
+    position: relative;
+    width: 400px;
+    right: -50px;
+    top: -220px;
+    font-size: 20px;
+    /* border: 1px solid red; */
+    z-index: 1;
+}
