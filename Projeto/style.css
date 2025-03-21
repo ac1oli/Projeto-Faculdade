@@ -20,12 +20,12 @@ ul{
     width: 100%;
     z-index: 10000;
     text-align: center;
-    background: #c0e0c0;
+    background: #ffffff;
     display: flex;
     justify-content: center;
     gap: 350px;
     height: 120px;
-    border-bottom: 1px solid #9e9d9d;
+    border-bottom: 2px solid #9e9d9d;
 }
 #img-cabecalho{
     font-size: 20px;
@@ -93,14 +93,14 @@ ul{
 .conteudo-bloco-1{
     display: flex;
     justify-content: center;
-    background: white;
+    background: #8EA638;
     height: 400px;
     margin-bottom: 10px;
 }
 .conteudo-bloco-2{
     display: flex;
     justify-content: center;
-    background: rgba(0, 128, 0, 0.247);
+    background: rgb(255, 255, 255);
     height: 400px;
 }
 

@@ -119,14 +119,21 @@ body {
 }
 
 
+.voltar{
+    width: 50px;
+    margin: 0;
+    position: absolute;
+    left: 20px;
+}
 
-
-
-
-
-
-
-
+.voltar a img{
+    display: block;
+    width: 50px;
+    margin: 0;
+    position: absolute;
+    top: -560px;
+    
+}
 
 input.email{
     background-image: url("../Projeto/cadastro-login/email.png");
@@ -138,3 +145,9 @@ input.senha{
     background-image: url("../Projeto/cadastro-login/cadeado.png");
     padding-left: 35px;
 }
+
+.login-link {
+    margin-top: 10px;
+    display: flex;
+}
+
