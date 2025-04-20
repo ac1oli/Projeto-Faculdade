@@ -126,29 +126,42 @@ input.submit:hover {
 input.email {
     background-image: url("../Projeto/cadastro-login/email.png");
     padding-left: 35px;
+    background-size: 15px;
     
 }
 
 input.senha {
     background-image: url("../Projeto/cadastro-login/cadeado.png");
     padding-left: 35px;
+    background-size: 15px;
 }
 
-input.idade {
-    background-image: url("../Projeto/cadastro-login/grupo-de-idade.png");
+input[type="date"].Data {
+    background-image: url('cadastro-login/nascimento.png'); 
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 15px;
     padding-left: 35px;
-    
+}
+
+
+input.cpf {
+    background-image: url('cadastro-login/cpf.png'); 
+    padding-left: 35px;
+    background-size: 25px;
 }
 
 input.nome {
     background-image: url("../Projeto/cadastro-login/do-utilizador.png");
     padding-left: 35px;
+    background-size: 15px;
     
 }
 
 input.telefone {
     background-image: url('../Projeto/cadastro-login/chamada-telefonica.png');
     padding-left: 35px;
+    background-size: 15px;
     
 }
 
@@ -163,4 +176,44 @@ input.telefone {
     display: block;
     width: 50px;
     margin: 0;
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    fieldset {
+        width: 100%;
+        padding: 10px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    input.submit {
+        width: 100%;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .container img {
+        width: 150px;
+    }
+
+    .login-link a {
+        font-size: 14px;
+    }
+
+    #voltar {
+        position: static;
+        margin-top: 10px;
+    }
+
+    #voltar a img {
+        width: 40px;
+    }
 }

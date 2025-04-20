@@ -32,11 +32,29 @@
     <div class="section">
       <h2>Consultas</h2>
       <p>📅 22/04/2025 às 10h</p>
-      <p>📅 30/04/2025 às 14h</p>
+      
       <button class="link-btn" onclick="window.location.href='consulta.html'">+ Marcar nova consulta</button>
     </div>
 
+    <div class="consulta">
+      <p class="cancel-msg">Deseja cancelar a consulta?</p>
+      <p>📅 22/04/2025 às 10h</p>
+      <button onclick="confirmarCancelamento(this)">Cancelar</button>
+    </div>
+    
     </div>
   </div>
+
+  <script>
+    function confirmarCancelamento(botao) {
+      const consulta = botao.previousElementSibling.textContent;
+      const confirmar = confirm(`Você tem certeza que deseja cancelar a consulta em ${consulta}?`);
+      if (confirmar) {
+        botao.parentElement.remove();
+        alert("Consulta cancelada com sucesso.");
+      }
+    }
+  </script>
+  
 </body>
 </html>

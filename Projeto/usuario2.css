@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: Arial, sans-serif;
   background: url('cadastro-login/1.jpg') no-repeat center center fixed;
   background-size: cover;
   min-height: 100vh;
@@ -123,6 +123,31 @@ button:hover {
   padding: 8px 16px;
   margin-top: 15px;
   display: inline-block;
+}
+
+.consulta button {
+  background-color: #8EA638;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 8px 15px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.consulta button:hover {
+  background-color: #6d8c25;
+}
+
+.cancel-msg {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: bold;
+  color: #444;
+  margin-top: 5px;
 }
 
 
