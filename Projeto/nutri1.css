@@ -37,7 +37,7 @@ body {
 
 .navbar ul li a {
   text-decoration: none;
-  color: #8EA638;
+  color: #2e7d32;
   font-weight: 600;
   padding: 8px 12px;
   border-radius: 10px;
@@ -49,12 +49,13 @@ body {
   background: #d3e9be;
 }
 
+
 .container {
   background: transparent;
   backdrop-filter: blur(2px);
   padding: 30px 40px;
   border-radius: 30px;
-  max-width: 400px;
+  max-width: 500px;
   margin: 0 auto;
   color: #2e7d32;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -66,7 +67,7 @@ body {
 }
 
 .logo {
-  max-width: 150px;
+  max-width: 120px;
   margin-bottom: 20px;
 }
 
@@ -97,34 +98,15 @@ h1 {
 }
 
 ul {
-  list-style-type: disc;
-  padding-left: 20px;
+  list-style-type: none;
+  padding-left: 10px;
 }
 
-button {
-  background-color: #8EA638;
-  color: white;
-  border: none;
-  border-radius: 30px;
-  padding: 10px 25px;
-  font-weight: bold;
-  font-size: 1rem;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: background 0.3s ease;
+ul li::before {
+  content: "• ";
+  color: #8EA638;
+  margin-right: 5px;
 }
-
-button:hover {
-  background-color: #6d8c25;
-}
-
-.link-btn {
-  font-size: 0.9rem;
-  padding: 8px 16px;
-  margin-top: 15px;
-  display: inline-block;
-}
-
 
 @media (max-width: 480px) {
   .navbar ul {
@@ -148,10 +130,5 @@ button:hover {
 
   .section h2 {
     font-size: 1rem;
-  }
-
-  button {
-    font-size: 0.95rem;
-    padding: 10px 20px;
   }
 }

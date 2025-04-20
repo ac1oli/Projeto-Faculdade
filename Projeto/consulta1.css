@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: url('cadastro-login/1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 350px;
+  background: transparent;
+  border: 1px solid #9b9b9b;
+  backdrop-filter: blur(2px);
+  border-radius: 30px;
+  padding: 30px 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+              rgba(0, 0, 0, 0.12) 0px -12px 30px,
+              rgba(0, 0, 0, 0.12) 0px 4px 6px,
+              rgba(0, 0, 0, 0.17) 0px 12px 13px,
+              rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  color: #2e7d32;
+}
+
+.logo {
+  width: 100%;
+  max-width: 100px; 
+  height: auto;
+}
+
+
+h1 {
+  color: #8EA638;
+  margin-bottom: 1.5rem;
+  font-size: 20px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+  text-align: left;
+  width: 100%;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px 35px 10px 35px;
+  border: 1px solid #8EA638;
+  border-radius: 20px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 18px;
+  outline: none;
+  color: #080a01;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #080a01;
+}
+
+input.nome {
+  background-image: url('cadastro-login/do-utilizador.png');
+}
+
+input.email {
+  background-image: url('cadastro-login/email.png');
+}
+
+input.idade {
+  background-image: url('cadastro-login/grupo-de-idade.png');
+}
+
+input.telefone {
+  background-image: url('cadastro-login/chamada-telefonica.png');
+}
+
+input.horas {
+  background-image: url('cadastro-login/horario.png');
+}
+
+button, input.submit {
+  color: #ffffff;
+  background: #8EA638;
+  font-size: 14px;
+  width: 30%;
+  height: 35px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: background 0.3s ease;
+}
+
+button:hover, input.submit:hover {
+  background: #0a160d4a;
+}
+
+.login-link {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.login-link a {
+  font-size: 12px;
+  color: #8EA638;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+  color: #0a160d;
+  text-decoration: underline;
+}
+
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button, input.submit {
+    width: 50%;
+  }
+}

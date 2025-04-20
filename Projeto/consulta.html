@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agendamento de Consulta</title>
+  <link rel="stylesheet" href="consulta1.css">
+</head>
+<body>
+  <div class="container">
+    <img src="cadastro-login/image.png" alt="Logo" class="Logo">
+    <h1>Agende sua Consulta</h1>
+    <form>
+      <label for="nome">Nome completo</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome" class="nome" class="nome" required>
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" placeholder="Digite seu e-mail" class="email" required>
+
+      <label for="telefone">Telefone</label>
+      <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" class="telefone" required>
+
+      <label for="data">Data da consulta</label>
+      <input type="date" id="data" name="data" class="idade" required>
+
+      <label for="horario">Horário</label>
+      <select id="horario" name="horario" class="horas" required>
+        <option value="">Selecione um horário</option>
+        <option value="08:00">08:00</option>
+        <option value="10:00">10:00</option>
+        <option value="14:00">14:00</option>
+        <option value="16:00">16:00</option>
+      </select>
+
+      <label for="mensagem">Observações</label>
+      <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+      <button type="submit">Agendar</button>
+    </form>
+  </div>
+</body>
+</html>

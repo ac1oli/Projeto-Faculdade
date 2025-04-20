@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: url('cadastro-login/1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    padding-top: 60px;
+  }
+  
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    z-index: 1000;
+  }
+  
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 15px 0;
+    margin: 0;
+  }
+  
+  .navbar ul li {
+    margin: 0 15px;
+    list-style: none;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #2e7d32;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 10px;
+    transition: background 0.3s;
+  }
+  
+  .navbar ul li a:hover,
+  .navbar ul li a.active {
+    background: #d3e9be;
+  }
+  
+  
+  .container {
+    background: transparent;
+    backdrop-filter: blur(2px);
+    padding: 30px 40px;
+    border-radius: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #2e7d32;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  
+  .dia {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  
+  .dia h2 {
+    color: #558B2F;
+    margin-bottom: 10px;
+    border-left: 4px solid #8EA638;
+    padding-left: 10px;
+  }
+  
+  .consulta {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .consulta p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+    color: #333;
+  }
+  
+  /* RESPONSIVO */
+  @media (max-width: 480px) {
+    .navbar ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar ul li {
+      margin: 5px 0;
+    }
+  
+    .container {
+      padding: 20px;
+      margin: 0 10px;
+      border-radius: 20px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    .consulta {
+      padding: 10px;
+    }
+  
+    .dia h2 {
+      font-size: 1.1rem;
+    }
+  }
+  
