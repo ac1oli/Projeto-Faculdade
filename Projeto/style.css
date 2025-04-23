@@ -12,6 +12,10 @@ ul{
     list-style: none;
 }
 
+.container-index {
+    overflow-x: hidden;
+}
+
 /* Formatando o menu de navegação */
 #cabecalho{
     position: fixed;
